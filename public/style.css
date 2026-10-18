@@ -116,4 +116,9 @@ header { display: flex; justify-content: space-between; align-items: center; mar
 .nav-icon { font-size: 22px; margin-bottom: 4px; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s; }
 .nav-text { font-size: 10px; font-weight: bold; letter-spacing: 0.5px; }
 .nav-item.active { color: var(--accent-green); }
-.nav-item.active .nav-icon { filter: grayscale(0%); opacity: 1; transform: translateY(-3px) scale(1
+.nav-item.active .nav-icon { filter: grayscale(0%); opacity: 1; transform: translateY(-3px) scale(1.1); text-shadow: 0 0 10px rgba(0, 255, 136, 0.5); }
+.nav-item.active .nav-text { text-shadow: 0 0 10px rgba(0, 255, 136, 0.3); }
+
+/* ANIMACIONES */
+@keyframes coinFloat { 0%, 100% { transform: translateY(0) rotateY(0deg); } 50% { transform: translateY(-8px) rotateY(180deg); } }
+@keyframes floatUpDown { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
